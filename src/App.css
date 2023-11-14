@@ -51,6 +51,22 @@ font-size: 2em;
  color: #fff;
 }
 
+
+#scroll-3::-webkit-scrollbar{
+  width:10px;
+  background:#000; /*this is not important but just to explain that which part is being chnaged by this. Don't know why it's required to refresh after adding a new div with scrollbar*/
+}
+
+#scroll-3::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0px 0px 6px rgba(0,0,0,.3);
+  background:#f4f4f4;
+}
+
+#scroll-3::-webkit-scrollbar-thumb{
+  background:#1baaae;
+  background-image: -webkit-linear-gradient(20deg, rgba(255,255,255,.5) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.5) 75%, transparent 75%);
+}
+
 .parallax{
 
   display: flex;
@@ -120,9 +136,9 @@ font-size: 2em;
 }
 
 .about{
-  height: 100vh;
+  height: 50vh;
   position: relative;
-  background: #003329;
+  background: #529b8c;
   padding: 100px;
 }
 
@@ -136,6 +152,15 @@ font-size: 2em;
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+}
+
+.Product{
+  height: 100vh;
+  position: relative;
+  background: #b9e8de;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 .wrapper{
@@ -169,10 +194,13 @@ font-size: 2em;
     .bottom{
       width: 200%;
       height: 20%;
-      transition: transform 0.5s;
+      display: flex;
+      flex-direction: row;
+      background: white;
+      /* transition: transform 0.5s;
       &.clicked{
         transform: translateX(-50%);
-      }
+      } */
       h1{
           margin:0;
           padding:0;
@@ -183,93 +211,30 @@ font-size: 2em;
       }
       .left{
         height:100%;
-        width: 50%;
-        background: #f4f4f4;
+        width: 70%;
+        /* background: #529b8c; */
         position:relative;
         float:left;
+
         .details{
-          padding: 20px;
+          padding: 0px;
           float: left;
           width: calc(70% - 40px);
-        }
-        .buy{
-          float:right;
-          width: calc(30% - 2px);
-          height:100%;
-          background: #f1f1f1;
-          transition: background 0.5s;
-          border-left:solid thin rgba(0,0,0,0.1);
-          i{
-            font-size:30px;
-            padding:30px;
-            color: #254053;
-            transition: transform 0.5s;
-          }
-          &:hover{
-            background: #A6CDDE;
-          }
-          &:hover i{
-            transform: translateY(5px);
-            color:#00394B;
-          }
+          
         }
       }
       .right{
-        width: 50%;
-        background: #A6CDDE;
-        color: white;
+        width: 30%;
         float:right;
-        height:200%;
+        height:100%;
         overflow: hidden;
-        .details{
-          padding: 20px;
-          float: right;
-          width: calc(70% - 40px);
-        }
-        .done{
-          width: calc(30% - 2px);
-          float:left;
-          transition: transform 0.5s;
-          border-right:solid thin rgba(255,255,255,0.3);
-          height:50%;
-          i{
-            font-size:30px;
-            padding:30px;
-            color: white;
-          }
-        }
-        .remove{
-          width: calc(30% - 1px);
-          clear: both;
-          border-right:solid thin rgba(255,255,255,0.3);
-          height:50%;
-          background: #BC3B59;
-          transition: transform 0.5s, background 0.5s;
-          &:hover{
-            background: #9B2847;
-          }
-          &:hover i{
-            transform: translateY(5px);
-          }
-          i{
-            transition: transform 0.5s;
-            font-size:30px;
-            padding:30px;
-            color: white;
-          }
-        }
-        &:hover{
-          .remove, .done{
-            transform: translateY(-100%);
-          }
-        }
-      }
     }
   }
+}
   
   .inside{
     z-index:9;
-    background: #92879B;
+    background: #529b8c;;
     width:140px;
     height:140px;
     position: absolute;
@@ -278,12 +243,14 @@ font-size: 2em;
     border-radius: 0px 0px 200px 200px;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
+    
     .icon{
       position:absolute;
       right:85px;
       top:85px;
       color:white;
       opacity: 1;
+      font-size: 20px;
     }
     &:hover{
       width:100%;
@@ -308,23 +275,58 @@ font-size: 2em;
       transform: scale(0.5);
       transform: translateY(-200%);
       transition: opacity 0.2s, transform 0.8s;
-      table{
-        text-align:left;
-        width:100%;
-      }
-      h1, p, table{
-        color: white;
-      }
-      p{
-        font-size:13px;
-      }
+      color: white;
+      font-size:25px;
+  
     }
   }
 }
 
-.Product{
+.Service{
   height: 100vh;
   position: relative;
-  background: #b9e8de;
+  background: #71ab9d;
+  padding: 100px;
+  color: white ;
+}
+
+.Footer{
+  height: 50vh;
+  position: relative;
+  background: #b7dfd6;
   padding: 100px;
 }
+
+.btn {
+  /* padding: 0px; */
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  /* background: transparent; */
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background:#529b8c ;
+}
+
+.btn-sm {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: black;
+  /* margin: 15px 15px 15px 15px; */
+}
+
+
+
+.btn-sm:hover {
+  color: #529b8c;
+}
+
+.btn-sm:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+

@@ -22,6 +22,7 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
   return (
@@ -36,6 +37,9 @@ const App = () => {
           <a href="#">Login</a>
         </nav>
       </header>
+      <div id="scroll-3" class="scroll-bar">
+    <div class="force-overflow"></div>
+      </div>
 
       <section className="parallax">
         <h2 id="text1">F</h2>
@@ -69,59 +73,174 @@ const App = () => {
           <h1>Shampoo</h1>
           <p>Rs. 250</p>
         </div>
-        <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
       </div>
       <div class="right">
-        <div class="done"><i class="material-icons">done</i></div>
-        <div class="details">
-          <h1>Chair</h1>
-          <p>Added to your cart</p>
-        </div>
-        <div class="remove"><i class="material-icons">clear</i></div>
+        <button class="btn btn-sm">
+        <h1>
+          BUY
+        </h1>
+        </button>
       </div>
     </div>
   </div>
   <div class="inside">
-    <div class="icon"><i class="material-icons">info_outline</i></div>
+     <div class="icon">info</div> 
     <div class="contents">
       <table>
-        <tr>
-          <th>Width</th>
-          <th>Height</th>
+      <tr>
+          <th>Product <br></br>Name : </th>
+          <td>Cleaner</td>
         </tr>
+        <br></br>
         <tr>
-          <td>3000mm</td>
-          <td>4000mm</td>
+          <th>Product No. : </th>
+          <td>4568</td>
         </tr>
+        <br></br>
         <tr>
-          <th>Something</th>
-          <th>Something</th>
+        <th>Price : </th>
+        <td>Rs. 200</td>
         </tr>
+        <br></br>
         <tr>
-          <td>200mm</td>
-          <td>200mm</td>
+        <th>Quantity : </th>
+        <td>500 ml </td>
         </tr>
-        <tr>
-          <th>Something</th>
-          <th>Something</th>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h1>Shampoo</h1>
+          <p>Rs. 250</p>
+        </div>
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+     <div class="icon">info</div> 
+    <div class="contents">
+      <table>
+      <tr>
+          <th>Product <br></br>Name : </th>
+          <td>Cleaner</td>
         </tr>
+        <br></br>
         <tr>
-          <td>200mm</td>
-          <td>200mm</td>
+          <th>Product No. : </th>
+          <td>4568</td>
         </tr>
+        <br></br>
         <tr>
-          <th>Something</th>
-          <th>Something</th>
+        <th>Price : </th>
+        <td>Rs. 200</td>
         </tr>
+        <br></br>
         <tr>
-          <td>200mm</td>
-          <td>200mm</td>
+        <th>Quantity : </th>
+        <td>500 ml </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h1>Shampoo</h1>
+          <p>Rs. 250</p>
+        </div>
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+     <div class="icon">info</div> 
+    <div class="contents">
+      <table>
+      <tr>
+          <th>Product <br></br>Name : </th>
+          <td>Cleaner</td>
+        </tr>
+        <br></br>
+        <tr>
+          <th>Product No. : </th>
+          <td>4568</td>
+        </tr>
+        <br></br>
+        <tr>
+        <th>Price : </th>
+        <td>Rs. 200</td>
+        </tr>
+        <br></br>
+        <tr>
+        <th>Quantity : </th>
+        <td>500 ml </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h1>Shampoo</h1>
+          <p>Rs. 250</p>
+        </div>
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+     <div class="icon">info</div> 
+    <div class="contents">
+      <table>
+      <tr>
+          <th>Product <br></br>Name : </th>
+          <td>Cleaner</td>
+        </tr>
+        <br></br>
+        <tr>
+          <th>Product No. : </th>
+          <td>4568</td>
+        </tr>
+        <br></br>
+        <tr>
+        <th>Price : </th>
+        <td>Rs. 200</td>
+        </tr>
+        <br></br>
+        <tr>
+        <th>Quantity : </th>
+        <td>500 ml </td>
         </tr>
       </table>
     </div>
   </div>
 </div>
 
+</section>
+ <section className='Service'>
+    <h1> Make a service form</h1>
+
+ </section>
+ <section className='Footer'>
+    <h1>Add icons for insta , whatsapp and a quer page with nodemailer integrated</h1>
  </section>
     </div>
   );
