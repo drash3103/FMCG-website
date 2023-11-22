@@ -1,0 +1,35 @@
+/* profile.css */
+.profile {
+    /* Add your styling for the profile container */
+  }
+  
+  .profile-button {
+    /* Add styling for the button to open the profile */
+    cursor: pointer;
+    /* Add any other styling as needed */
+  }
+  
+  .profile-card {
+    /* Add your styling for the profile card */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    /* Add styling for the header section */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .order-history {
+    /* Add styling for the order history section */
+  }
+  
+  /* Add any other styling as needed */
+  

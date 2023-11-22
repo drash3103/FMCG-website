@@ -1,9 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/auth';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Products = () => {
+  const navigate = useNavigate();
+  const { auth } = useAuth();
+
+  const handleBuyClick = () => {
+    // Check if the user is logged in
+    if (auth && auth.user) {
+      // If logged in, navigate to the "/buy" page
+      navigate('/buy');
+    } else {
+      // If not logged in, you can redirect the user to the login page or show a login modal
+      // For now, let's just log a message
+      toast.error('You need to log in to buy something.');
+      console.log('User not logged in. Redirect to login page or show login modal.');
+    }
+  };
+
   return (
    <>
-   <section className="Product">
+   <div className="Product">
       <div class="wrapper">
   <div class="container">
     <div class="top"></div>
@@ -15,7 +36,7 @@ const Products = () => {
         </div>
       </div>
       <div class="right">
-      <button class="btn" role="button" onClick={purchase}>BUY</button>
+      <button class="btn" role="button" onClick={handleBuyClick}>BUY</button>
       </div>
     </div>
   </div>
@@ -57,6 +78,7 @@ const Products = () => {
         </div>
       </div>
       <div class="right">
+      <button class="btn" role="button" onClick={handleBuyClick}>BUY</button>
       </div>
     </div>
   </div>
@@ -98,6 +120,7 @@ const Products = () => {
         </div>
       </div>
       <div class="right">
+      <button class="btn" role="button" onClick={handleBuyClick}>BUY</button>
       </div>
     </div>
   </div>
@@ -139,6 +162,7 @@ const Products = () => {
         </div>
       </div>
       <div class="right">
+      <button class="btn" role="button" onClick={handleBuyClick}>BUY</button>
       </div>
     </div>
   </div>
@@ -170,7 +194,7 @@ const Products = () => {
   </div>
 </div>
 
-</section>
+</div>
    </>
   )
 }

@@ -7,19 +7,19 @@ export  const registerController = async(req,res)=>{
         const {username,email,password,phone,address}=req.body
         //validation
         if(!username){
-            return res.send({error:'userusername is required'});
+            return res.send({message:'userusername is required'});
         }
         if(!email){
-            return res.send({error:'email is required'});
+            return res.send({message:'email is required'});
         }
         if(!password){
-            return res.send({error:'password is required'});
+            return res.send({message:'password is required'});
         }
         if(!phone){
-            return res.send({error:'phone is required'});
+            return res.send({message:'phone is required'});
         }
         if(!address){
-            return res.send({error:'address is required'});
+            return res.send({message:'address is required'});
         }
 
         //check user
@@ -28,8 +28,8 @@ export  const registerController = async(req,res)=>{
         //existing user
         if(existingUser){
             return res.status(200).send({
-                success:true,
-                message:'already registered, please login'
+                success:false,
+                message:'Already Registered, Please Login'
             })
         }
 
@@ -41,7 +41,7 @@ export  const registerController = async(req,res)=>{
 
         res.status(201).send({
             success:true,
-            message:'registration successful',
+            message:'Registration Successful',
             user
     
         })
@@ -51,7 +51,7 @@ export  const registerController = async(req,res)=>{
         console.log(error)
         res.status(500).send({
             success:false,
-            message:'error in registration',
+            message:'Error in Registration',
             error
         })
     }
@@ -65,7 +65,7 @@ export const loginController= async(req,res)=>{
         if(!email || !password){
             return res.status(404).send({
                 success:false,
-                message:'invalid details or password'
+                message:'Invalid Details or Password'
             })
         }
         //check user
@@ -85,11 +85,11 @@ export const loginController= async(req,res)=>{
     }
     //token
     const token= await JWT.sign({_id:user._id},process.env.JWT_SECRET,{
-        expiresIn:'7d',
+        expiresIn:'10d',
     });
     res.status(201).send({
         success:true,
-        message:"login successfully",
+        message:"Login Successfull",
         user:{
             username:user.username,
             email:user.email,

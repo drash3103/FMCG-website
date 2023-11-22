@@ -1,0 +1,53 @@
+.Service {
+    height: 100vh;
+    display: flex;
+    }
+    .left-box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    }
+    .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+    label {
+    margin-bottom: 5px;
+    }
+    input,
+    textarea,
+    button {
+    /* margin-bottom: 15px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    }
+    .right-box {
+    width: 50%;
+    overflow: hidden;
+    }
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    button[type="submit"] {
+    background-color: #1baaae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    }
+    button[type="submit"]:hover {
+    background-color: #2196F3;
+    }

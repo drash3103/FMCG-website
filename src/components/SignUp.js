@@ -1,9 +1,8 @@
-
-
-//2
 import React, { useState } from 'react';
 import axios from 'axios';
-import Parallax from './Parallax';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import './signup.css'
 
 const SignUp = () => {
     const [username, setUsername] = useState('');
@@ -11,7 +10,7 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [phone, setPhone] = useState('');
     const [address, setAddress] = useState('');
-
+    const navigate=useNavigate()
     const submit = async (e) => {
         e.preventDefault();
 
@@ -23,9 +22,15 @@ const SignUp = () => {
                 phone,
                 address
             });
-
+            if(response.data.success){
+                toast.success(response.data.message);
+                navigate('/login');
+            }
+            else{
+                toast.error(response.data.message);
+            }
             console.log(response.data); // Handle the response accordingly
-            <Parallax/>
+            // <Parallax/>
         } catch (error) {
             console.error(error);
         }
@@ -35,11 +40,11 @@ const SignUp = () => {
         <div className="Signup">
             <h1>Sign Up</h1>
             <form action="post">
-                <input type="text" onChange={(e) => { setUsername(e.target.value) }} placeholder='enter username' />
-                <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder='enter email' />
-                <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder='enter password' />
-                <input type="text" onChange={(e) => { setPhone(e.target.value) }} placeholder='enter phone number' />
-                <input type="text" onChange={(e) => { setAddress(e.target.value) }} placeholder='enter address' />
+                <input type="text" value={username} onChange={(e) => { setUsername(e.target.value) }} placeholder='enter username' required />
+                <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder='enter email' required/>
+                <input type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder='enter password' required />
+                <input type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} placeholder='enter phone number' required/>
+                <input type="text" value={address} onChange={(e) => { setAddress(e.target.value) }} placeholder='enter address' required/>
                 <input type="submit" onClick={submit} />
             </form>
         </div>

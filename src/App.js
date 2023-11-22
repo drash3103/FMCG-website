@@ -8,8 +8,12 @@ import Header from './components/Header';
 import About from './components/About';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Buy from './components/Buy';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+import { AuthProvider } from './context/auth';
 
 const App = () => {
   useEffect(() => {
@@ -37,21 +41,25 @@ const App = () => {
 
   return (
     <div>
+      
+      <AuthProvider>
       <Router>
       <Header/>
       <Routes> 
-                <Route path="/home" element={<Parallax/>}></Route>
+                <Route path="/" element={<Parallax/>}></Route>
                 <Route path='/about' element={< About />}></Route> 
                 <Route path='/products' element={< Products />}></Route> 
                 <Route path='/service' element={< Service />}></Route> 
                 <Route path='/login' element={<Login/>}></Route>
                 <Route path='/signup' element={<SignUp/>}></Route>
+                <Route path="/buy" element={<Buy />} /> {/* Add this line for the /buy path */}
         </Routes> 
       </Router>
-      {/* <section id="products">
-        <Products/>
-      </section> */}
-      {/* <Parallax/> */}
+      </AuthProvider> 
+     
+    
+      
+      
       {/* <About/>
       <Products/>
       <Service/>     */}
@@ -61,9 +69,13 @@ const App = () => {
     <div class="block3"><h1>Shamik</h1></div>
     <div class="block4"><h1>Khushi</h1></div>
     <div class="block5"><h1>Het</h1></div>
- </section> */}
+ </section>  */}
+ <ToastContainer/>
     </div>
+    
   );
 }
 
 export default App;
+
+
