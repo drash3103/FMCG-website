@@ -1,0 +1,86 @@
+Date : 2023-11-26 23:54:23
+Directory : /Users/drashti/Desktop/fmcg-website/se
+Total : 42 files,  35602 codes, 316 comments, 324 blanks, all 36242 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          5 |     33,927 |          0 |          5 |     33,932 |
+| JavaScript |         23 |        859 |        201 |        178 |      1,238 |
+| CSS        |         10 |        750 |         92 |        106 |        948 |
+| Markdown   |          1 |         40 |          0 |         33 |         73 |
+| HTML       |          1 |         22 |         23 |          1 |         46 |
+| Properties |          1 |          3 |          0 |          1 |          4 |
+| XML        |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         42 |     35,602 |        316 |        324 |     36,242 |
+| . (Files)                                                                    |          3 |     31,780 |          0 |         35 |     31,815 |
+| backend                                                                      |         11 |      2,375 |        117 |         69 |      2,561 |
+| backend (Files)                                                              |          5 |      2,184 |         99 |         38 |      2,321 |
+| backend/config                                                               |          1 |         11 |          0 |          4 |         15 |
+| backend/controller                                                           |          1 |         90 |         10 |         12 |        112 |
+| backend/helper                                                               |          1 |         13 |          0 |          3 |         16 |
+| backend/middlewares                                                          |          1 |         38 |          3 |          9 |         50 |
+| backend/models                                                               |          1 |         30 |          0 |          1 |         31 |
+| backend/routes                                                               |          1 |          9 |          5 |          2 |         16 |
+| public                                                                       |          2 |         47 |         23 |          2 |         72 |
+| src                                                                          |         26 |      1,400 |        176 |        218 |      1,794 |
+| src (Files)                                                                  |          9 |        483 |         71 |         94 |        648 |
+| src/components                                                               |         16 |        885 |         76 |        111 |      1,072 |
+| src/context                                                                  |          1 |         32 |         29 |         13 |         74 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                     | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/drashti/Desktop/fmcg-website/se/README.md                             | Markdown   |         40 |          0 |         33 |         73 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/.env                          | Properties |          3 |          0 |          1 |          4 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/config/db.js                  | JavaScript |         11 |          0 |          4 |         15 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/controller/authController.js  | JavaScript |         90 |         10 |         12 |        112 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/helper/authHelper.js          | JavaScript |         13 |          0 |          3 |         16 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/main.js                       | JavaScript |          0 |         72 |         20 |         92 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/middlewares/authMiddleware.js | JavaScript |         38 |          3 |          9 |         50 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/models/userModel.js           | JavaScript |         30 |          0 |          1 |         31 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/package-lock.json             | JSON       |      2,138 |          0 |          1 |      2,139 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/package.json                  | JSON       |         24 |          0 |          1 |         25 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/routes/authRoute.js           | JavaScript |          9 |          5 |          2 |         16 |
+| /Users/drashti/Desktop/fmcg-website/se/backend/server.js                     | JavaScript |         19 |         27 |         15 |         61 |
+| /Users/drashti/Desktop/fmcg-website/se/package-lock.json                     | JSON       |     31,683 |          0 |          1 |     31,684 |
+| /Users/drashti/Desktop/fmcg-website/se/package.json                          | JSON       |         57 |          0 |          1 |         58 |
+| /Users/drashti/Desktop/fmcg-website/se/public/index.html                     | HTML       |         22 |         23 |          1 |         46 |
+| /Users/drashti/Desktop/fmcg-website/se/public/manifest.json                  | JSON       |         25 |          0 |          1 |         26 |
+| /Users/drashti/Desktop/fmcg-website/se/src/App.css                           | CSS        |        381 |         25 |         63 |        469 |
+| /Users/drashti/Desktop/fmcg-website/se/src/App.js                            | JavaScript |         56 |         10 |         16 |         82 |
+| /Users/drashti/Desktop/fmcg-website/se/src/App.test.js                       | JavaScript |          7 |          0 |          2 |          9 |
+| /Users/drashti/Desktop/fmcg-website/se/src/Login.css                         | CSS        |          0 |         29 |          2 |         31 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/About.js               | JavaScript |         25 |          0 |          6 |         31 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Buy.js                 | JavaScript |         77 |          6 |          8 |         91 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Header.js              | JavaScript |         34 |         25 |         20 |         79 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Login.js               | JavaScript |         51 |          1 |          7 |         59 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Parallax.js            | JavaScript |         40 |          0 |          6 |         46 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Products.js            | JavaScript |        194 |          4 |          8 |        206 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Profile.css            | CSS        |         21 |         14 |          9 |         44 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Profile.js             | JavaScript |         31 |          1 |          5 |         37 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/Service.js             | JavaScript |         27 |          0 |          7 |         34 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/SignUp.js              | JavaScript |         49 |          1 |          5 |         55 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/buy.css                | CSS        |         63 |          0 |          2 |         65 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/login.css              | CSS        |         44 |          0 |          7 |         51 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/parallax.css           | CSS        |         61 |          5 |         17 |         83 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/product.css            | CSS        |         72 |          5 |          2 |         79 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/service.css            | CSS        |         52 |          1 |          0 |         53 |
+| /Users/drashti/Desktop/fmcg-website/se/src/components/signup.css             | CSS        |         44 |         13 |          2 |         59 |
+| /Users/drashti/Desktop/fmcg-website/se/src/context/auth.js                   | JavaScript |         32 |         29 |         13 |         74 |
+| /Users/drashti/Desktop/fmcg-website/se/src/index.css                         | CSS        |         12 |          0 |          2 |         14 |
+| /Users/drashti/Desktop/fmcg-website/se/src/index.js                          | JavaScript |         13 |          3 |          6 |         22 |
+| /Users/drashti/Desktop/fmcg-website/se/src/logo.svg                          | XML        |          1 |          0 |          0 |          1 |
+| /Users/drashti/Desktop/fmcg-website/se/src/reportWebVitals.js                | JavaScript |         12 |          0 |          2 |         14 |
+| /Users/drashti/Desktop/fmcg-website/se/src/setupTests.js                     | JavaScript |          1 |          4 |          1 |          6 |
+| Total                                                                        |            |     35,602 |        316 |        324 |     36,242 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
